@@ -7,29 +7,65 @@
 
 import XCTest
 
+@testable import CityBus
 final class CityBusTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var network: Network!
+    
+    override func setUp() async throws {
+        network = Network()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    
+    override func tearDown() async throws {
+        network = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_FetchJsonBusStop_ShouldReturnLinea33() async throws {
+        let busStops =  try await network.fetchJSON(url: URL(string:"https://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus/33.json")!, type: BusStopsModel.self)
+        
+        XCTAssertEqual(busStops.title, "Transporte Urbano. Línea 33")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    
+    func test_FetchJsonBusStopN6_ShouldReturnN6() async throws {
+        let busStops =  try await network.fetchJSON(url: URL(string:"https://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus/N6.json")!, type: BusStopsModel.self)
+        
+        XCTAssertEqual(busStops.title, "Transporte Urbano. Línea N6")
+    }
+    
+    func test_FetchURLLines_ShouldReturn76() async throws {
+        let urlBusLines = try await network.fetchJSON(url: .busLines, type: URLBusLines.self)
+        
+        XCTAssertEqual(urlBusLines.result.count, 76)
+    }
+    
+    func test_FetchAlllines() async throws {
+        let urlBusLines = try await network.fetchJSON(url: .busLines, type: URLBusLines.self).result
+        
+        //titulo:linea
+        var busLines: [BusStopsModel] = []
+        
+        for line in urlBusLines {
+            let urlString = line.replace("http", with: "https")
+            let url = URL(string: urlString)!.appendingPathExtension("json")
+           
+            do {
+                async let busStop = try network.fetchJSON(url: url, type: BusStopsModel.self)
+                
+                try await busLines.append(busStop)
+            } catch {
+                XCTFail("Error")
+            }
         }
+        
+        network.saveJson(data: busLines, type: [BusStopsModel].self, path: URL.documentsDirectory)
+        print(URL.documentsDirectory)
+        
     }
-
+    
+    func test_FetchSearchBusStop_shouldReturn133 () async throws {
+        let busStop = try await network.fetchJSON(url: .searchBusStop(id: 133), type: BusStopModel.self)
+        
+        XCTAssertEqual(busStop.title, "(133) Av. Gómez Laguna N.º 6 Líneas: 22")
+        
+    }
 }

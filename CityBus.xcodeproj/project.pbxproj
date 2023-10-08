@@ -7,21 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0F037C2AC098A7001D467B /* BusLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F037B2AC098A7001D467B /* BusLineModel.swift */; };
+		3A0F03842AC09A4C001D467B /* CityBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F03832AC09A4C001D467B /* CityBusTests.swift */; };
+		3A0F038C2AC09AB7001D467B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F038B2AC09AB7001D467B /* Network.swift */; };
+		3A0F038E2AC09F54001D467B /* URLBusLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F038D2AC09F54001D467B /* URLBusLines.swift */; };
+		3A0F03902AC0A0AC001D467B /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F038F2AC0A0AC001D467B /* Interface.swift */; };
 		3A3C668E2AB77A8B00DD13CA /* CityBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C668D2AB77A8B00DD13CA /* CityBusApp.swift */; };
 		3A3C66902AB77A8B00DD13CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C668F2AB77A8B00DD13CA /* ContentView.swift */; };
 		3A3C66922AB77A8C00DD13CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C66912AB77A8C00DD13CA /* Assets.xcassets */; };
 		3A3C66952AB77A8C00DD13CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C66942AB77A8C00DD13CA /* Preview Assets.xcassets */; };
+		3ACA32192AD329ED00CC28B7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA32182AD329ED00CC28B7 /* MainTabView.swift */; };
+		3ACA321B2AD32ACD00CC28B7 /* SearchBusStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA321A2AD32ACD00CC28B7 /* SearchBusStopView.swift */; };
+		3ACA321D2AD32B1A00CC28B7 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA321C2AD32B1A00CC28B7 /* FavoritesView.swift */; };
+		3ACA321F2AD32B4400CC28B7 /* BusLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA321E2AD32B4400CC28B7 /* BusLinesView.swift */; };
+		3ACA32212AD32EE300CC28B7 /* BusStopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA32202AD32EE300CC28B7 /* BusStopModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3A0F03852AC09A4C001D467B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A3C66822AB77A8B00DD13CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3C66892AB77A8B00DD13CA;
+			remoteInfo = CityBus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3A0F037B2AC098A7001D467B /* BusLineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLineModel.swift; sourceTree = "<group>"; };
+		3A0F03812AC09A4C001D467B /* CityBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0F03832AC09A4C001D467B /* CityBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBusTests.swift; sourceTree = "<group>"; };
+		3A0F038B2AC09AB7001D467B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3A0F038D2AC09F54001D467B /* URLBusLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBusLines.swift; sourceTree = "<group>"; };
+		3A0F038F2AC0A0AC001D467B /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		3A0F03912AC0A9A0001D467B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A3C668A2AB77A8B00DD13CA /* CityBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3C668D2AB77A8B00DD13CA /* CityBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBusApp.swift; sourceTree = "<group>"; };
 		3A3C668F2AB77A8B00DD13CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A3C66912AB77A8C00DD13CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3C66942AB77A8C00DD13CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3ACA32182AD329ED00CC28B7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		3ACA321A2AD32ACD00CC28B7 /* SearchBusStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBusStopView.swift; sourceTree = "<group>"; };
+		3ACA321C2AD32B1A00CC28B7 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		3ACA321E2AD32B4400CC28B7 /* BusLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusLinesView.swift; sourceTree = "<group>"; };
+		3ACA32202AD32EE300CC28B7 /* BusStopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A0F037E2AC09A4C001D467B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A3C66872AB77A8B00DD13CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +71,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0F03782AC0985A001D467B /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				3A0F037B2AC098A7001D467B /* BusLineModel.swift */,
+				3A0F038D2AC09F54001D467B /* URLBusLines.swift */,
+				3ACA32202AD32EE300CC28B7 /* BusStopModel.swift */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		3A0F03822AC09A4C001D467B /* CityBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A0F03912AC0A9A0001D467B /* Info.plist */,
+				3A0F03832AC09A4C001D467B /* CityBusTests.swift */,
+			);
+			path = CityBusTests;
+			sourceTree = "<group>";
+		};
+		3A0F038A2AC09AA5001D467B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3A0F038B2AC09AB7001D467B /* Network.swift */,
+				3A0F038F2AC0A0AC001D467B /* Interface.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		3A3C66812AB77A8B00DD13CA = {
 			isa = PBXGroup;
 			children = (
 				3A3C668C2AB77A8B00DD13CA /* CityBus */,
+				3A0F03822AC09A4C001D467B /* CityBusTests */,
 				3A3C668B2AB77A8B00DD13CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3C668A2AB77A8B00DD13CA /* CityBus.app */,
+				3A0F03812AC09A4C001D467B /* CityBusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +120,10 @@
 		3A3C668C2AB77A8B00DD13CA /* CityBus */ = {
 			isa = PBXGroup;
 			children = (
+				3ACA32172AD3298E00CC28B7 /* Views */,
+				3A0F038A2AC09AA5001D467B /* Network */,
+				3A0F03782AC0985A001D467B /* Modelos */,
 				3A3C668D2AB77A8B00DD13CA /* CityBusApp.swift */,
-				3A3C668F2AB77A8B00DD13CA /* ContentView.swift */,
 				3A3C66912AB77A8C00DD13CA /* Assets.xcassets */,
 				3A3C66932AB77A8C00DD13CA /* Preview Content */,
 			);
@@ -67,9 +138,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3ACA32172AD3298E00CC28B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A3C668F2AB77A8B00DD13CA /* ContentView.swift */,
+				3ACA32182AD329ED00CC28B7 /* MainTabView.swift */,
+				3ACA321A2AD32ACD00CC28B7 /* SearchBusStopView.swift */,
+				3ACA321C2AD32B1A00CC28B7 /* FavoritesView.swift */,
+				3ACA321E2AD32B4400CC28B7 /* BusLinesView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A0F03802AC09A4C001D467B /* CityBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A0F03872AC09A4C001D467B /* Build configuration list for PBXNativeTarget "CityBusTests" */;
+			buildPhases = (
+				3A0F037D2AC09A4C001D467B /* Sources */,
+				3A0F037E2AC09A4C001D467B /* Frameworks */,
+				3A0F037F2AC09A4C001D467B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A0F03862AC09A4C001D467B /* PBXTargetDependency */,
+			);
+			name = CityBusTests;
+			productName = CityBusTests;
+			productReference = 3A0F03812AC09A4C001D467B /* CityBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3A3C66892AB77A8B00DD13CA /* CityBus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A3C66982AB77A8C00DD13CA /* Build configuration list for PBXNativeTarget "CityBus" */;
@@ -94,9 +195,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					3A0F03802AC09A4C001D467B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3A3C66892AB77A8B00DD13CA;
+					};
 					3A3C66892AB77A8B00DD13CA = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -116,11 +221,19 @@
 			projectRoot = "";
 			targets = (
 				3A3C66892AB77A8B00DD13CA /* CityBus */,
+				3A0F03802AC09A4C001D467B /* CityBusTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A0F037F2AC09A4C001D467B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A3C66882AB77A8B00DD13CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +246,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A0F037D2AC09A4C001D467B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0F03842AC09A4C001D467B /* CityBusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A3C66862AB77A8B00DD13CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0F037C2AC098A7001D467B /* BusLineModel.swift in Sources */,
 				3A3C66902AB77A8B00DD13CA /* ContentView.swift in Sources */,
+				3A0F038C2AC09AB7001D467B /* Network.swift in Sources */,
 				3A3C668E2AB77A8B00DD13CA /* CityBusApp.swift in Sources */,
+				3ACA32192AD329ED00CC28B7 /* MainTabView.swift in Sources */,
+				3ACA321B2AD32ACD00CC28B7 /* SearchBusStopView.swift in Sources */,
+				3ACA32212AD32EE300CC28B7 /* BusStopModel.swift in Sources */,
+				3A0F038E2AC09F54001D467B /* URLBusLines.swift in Sources */,
+				3ACA321F2AD32B4400CC28B7 /* BusLinesView.swift in Sources */,
+				3A0F03902AC0A0AC001D467B /* Interface.swift in Sources */,
+				3ACA321D2AD32B1A00CC28B7 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3A0F03862AC09A4C001D467B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3C66892AB77A8B00DD13CA /* CityBus */;
+			targetProxy = 3A0F03852AC09A4C001D467B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3A0F03882AC09A4C001D467B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SPUJN2479;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityBusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.adrianiraizos.CityBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityBus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CityBus";
+			};
+			name = Debug;
+		};
+		3A0F03892AC09A4C001D467B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SPUJN2479;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityBusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.adrianiraizos.CityBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityBus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CityBus";
+			};
+			name = Release;
+		};
 		3A3C66962AB77A8C00DD13CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +507,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A0F03872AC09A4C001D467B /* Build configuration list for PBXNativeTarget "CityBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A0F03882AC09A4C001D467B /* Debug */,
+				3A0F03892AC09A4C001D467B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A3C66852AB77A8B00DD13CA /* Build configuration list for PBXProject "CityBus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
