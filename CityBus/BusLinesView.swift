@@ -15,4 +15,5 @@ struct BusLinesView: View {
 
 #Preview {
     BusLinesView()
+    
 }

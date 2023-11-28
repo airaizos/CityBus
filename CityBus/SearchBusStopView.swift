@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SearchBusStopView: View {
     @State var searchText = ""
+    
     var body: some View {
         NavigationStack {
             VStack {
